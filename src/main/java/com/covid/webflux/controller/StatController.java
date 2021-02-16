@@ -19,9 +19,4 @@ public class StatController {
     public Mono<CovidStatData> toto(){
         return statService.getStatsCovid();
     }
-    @GetMapping(value = "tata")
-    public Mono<List<String>> tata(){
-            return statService.getAllCountries();
-    }
-
 }
